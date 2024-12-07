@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Docker-Example
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_CONTAINER_NAME}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
