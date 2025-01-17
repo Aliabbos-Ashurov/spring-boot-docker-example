@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:latest AS build
+FROM maven AS build
 WORKDIR /app
 
 COPY pom.xml /app/
